@@ -1,0 +1,52 @@
+---
+title: "Hollywood Oyuncuları Arasındaki Eşitsizlikler"
+author: 
+  - Gizem YOLDAŞ[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 20080312, [Github Repo](https://github.com/gizemyoldas/Gizem.git)
+
+
+# Giriş
+Hollywood ‘un kadın ve erkek oyucularının çift olarak rol aldıkları filmlerde aralarındaki yaş farklarını ve cinsiyete bağlı ayrımcılığı anlamlandırmak üzere Tidy Tuesday adlı web sitesinden ‘’Hollywood Age Gaps’’ adlı veri seti çekilmiş olup filmlerde oyuncuların cinsiyet dağılımları, kadın ve erkek oyuncuların yaş dağılımları -cinsiyete dayalı- oynadıkları baş ve yan roller gibi değişkenler bulunmaktadır.  Analiz İtibariyle ‘’Cinsiyet ve yaş faktörünün Hollywood’un oyuncu seçiminde etkisi nedir?’’ Sorusu üzerinde durulacaktır.
+
+
+
+## Çalışmanın Amacı
+Veri setinde partnerler arası yaş farkı 0’dan 52’ye kadar değişen yaş, cinsiyet, rol vb. kayıtlar bulunmaktadır. Çalışmanın amacı bu kayıtlara göre Hollywood’da kadın oyuncuların cinsiyet ve yaş temelli maruz kaldıkları ayrımcılığın ortak özellikleri olacaktır. (Cinsiyet, yaş ,rol, partner oyuncunun yaşı… )
+
+## Literatür 
+Sinema aktörlüğü yaş temelli ve cinsiyete dayalı ayrımcılığın yaygın olarak iddia edildiği bir meslek haline geldi. Özelliklerini incelediğimizde ayrımcılığa maruz kalanlar arasında birçok ortak nokta olduğunu görmekteyiz (Yaş, cinsiyet, rol, verilen ücret, ödül..). 1920 ile 2011 yılları arasında 50.000'den fazla uzun metrajlı filmde oynanan yaklaşık yarım milyon farklı rollerin üçte ikisi erkeklere gitti ve ortalama erkek aktör, ortalama kadın aktörden sürekli olarak daha yaşlıdır (altı ila on yıl) (@fleck2016persistence). Yapılan birçok araştırma gösteriyor ki kadın olmanın ve yaşlanmanın aktörler tarafından alınan film rollerinin sayısı ve ortalama yıldız varlıkları üzerindeki önemli olumsuz etkilerini doğrulamaktadır. Dahası, yaşlanmanın oyuncuların kariyer fırsatları üzerindeki cinsiyete dayalı etkileri, film rollerinin sayısına göre zamanla biraz azaldı, ancak yıldız varlığı açısından değil (@lincoln2004double).  @hanssen2012persistence ’e göre de bu durum böyle, ortalama bir erkek aktör sürekli olarak ortalama kadın aktörden yaklaşık sekiz yaş büyük kalmıştır. Son olarak, kadın aktörlerin kazanç ortalamaları da daha erken yaşlarda (34) düşme eğilimi gösterirken, erkeklerde bu ortalamanın çok daha ileri yaşlarda (51) olduğu gözlemlenmiştir (@de2014age).
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
